@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.physicaloid.app.fpga_usb_test.FPGAUSBTestActivity$PlaceholderFragment" >
+
+    <EditText
+        android:id="@+id/et7seg"
+        android:hint="0000 - FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv7seg"
+        android:layout_toLeftOf="@+id/btWrite"
+        android:layout_toRightOf="@+id/tv7seg"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et7seg"
+        android:layout_alignBottom="@+id/et7seg"
+        android:layout_alignParentRight="true"
+        android:text="Write" />
+
+    <TextView
+        android:id="@+id/tvLed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv7seg"
+        android:text="LED1" />
+
+    <SeekBar
+        android:id="@+id/sbLed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLed1"
+        android:max="255" />
+
+    <TextView
+        android:id="@+id/tvLed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sbLed1"
+        android:text="LED2" />
+
+    <SeekBar
+        android:id="@+id/sbLed2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLed2"
+        android:max="255" />
+    
+    <TextView
+        android:id="@+id/tvLed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sbLed2"
+        android:text="LED3" />
+
+    <SeekBar
+        android:id="@+id/sbLed3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLed3"
+        android:max="255" />
+    
+    <TextView
+        android:id="@+id/tvLed4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sbLed3"
+        android:text="LED4" />
+
+    <SeekBar
+        android:id="@+id/sbLed4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvLed4"
+        android:max="255" />
+
+    <Button
+        android:id="@+id/btOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Open" />
+
+    <TextView
+        android:id="@+id/tv7seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btOpen"
+        android:text="7seg Value" />
+
+    <Button
+        android:id="@+id/btClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btOpen"
+        android:text="Close" />
+
+    <ScrollView
+        android:id="@+id/svDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sbLed4" >
+        <TextView
+            android:id="@+id/tvDebug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+ />
+    </ScrollView>
+</RelativeLayout>
